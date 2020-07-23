@@ -1,0 +1,5 @@
+sentence = "hippo runs to us!"
+a = set(sentence)
+
+output = dict(zip(a,list(map(lambda x: sentence.count(x), a))))
+print(output)
