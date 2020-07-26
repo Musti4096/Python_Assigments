@@ -1,0 +1,8 @@
+words = ["eat", "tea", "tan", "ate", "nat", "bat"]
+anagram = []
+
+for i in words:
+    my_list = [j for j in words if set(i) == set(j)]
+    if my_list not in anagram:
+        anagram.append(my_list)
+print("Output:", anagram)
